@@ -1,0 +1,173 @@
+html, body{
+	height:100%;
+	width:100%;
+	margin:0;
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	background:#0054a6;
+}
+
+/*	MENU */
+* { /*keeps the two together, can't find this but v important*/
+  margin:0;
+  padding:0;
+}
+
+#header #nav {
+	background:#4F9EC9; /*top only*/
+	padding:5px;
+	font-size:130%;
+	width:100%;
+	float:right; /*this messes it up*/
+	position: fixed;
+	z-index: 4;
+	text-align: right;
+/*	border-bottom: 2px solid #0054a6;*/
+}
+
+#header #nav a {
+  color:#fff;
+  text-decoration:none;
+  padding:10px 30px 4px; /*of the hover?*/
+  /*float:right;*/
+}
+
+#header #nav a:hover {
+  background:#3f91bd;
+}
+
+#header #nav a.active { /* consider*/
+  background:#4F9EC9;
+}
+
+#header #nav li {
+	display:inline;
+	list-style:none;
+	margin:5px 0px 0 -4px;
+/*	float:right; /*makes it baliktad pero pwede ko bang dayain? :( */
+}
+
+#header #subnav {
+	background:#3f91bd;
+	padding:40px 10px 7px;
+	color:#DEEDF5;
+	height:15px;
+	position: fixed;
+	z-index: 2;
+	width:100%;
+	text-align: right;
+  	border-bottom: 2px solid #0054a6;
+}
+
+#header #subnav li {
+	list-style:none;
+	display:inline;
+	margin:5px 30px 0 5px;
+}
+
+#header #subnav a {
+  color:#DEEDF5;
+  text-decoration:none;
+}
+
+#header #subnav a:hover {
+  color:gray;
+}
+
+/*for the page you're on??*/
+#header #subnav a.active {
+  border-bottom:2px solid #388CBA;
+  color:#fff;
+}
+
+
+
+/*	MAIN THINGS	*/
+.wrapper {
+	display:table;
+	height:100%;
+	width:100%;}
+
+.wrappers {
+	display:table;
+	height: 30%;
+	width:100%;
+}
+
+
+.stage{ 	/*absolutely middled*/
+	display: table-cell;
+	vertical-align: middle;}
+
+.staged{ 	/*sagad sa tass*/
+	display: table-cell;}
+
+.tabled, .middled{
+  text-align: center;
+  margin: 0 auto;}
+
+
+/*	FOOTER	*/
+.footer{
+	background-color: #509fca;
+	height:100%;
+	width:100%;
+  	border-top: 20px solid #4091be;
+}
+
+#top{
+	/*background-color: green;*/
+	height:90%;
+	display: table;
+	text-align: left;
+}
+
+.desc{
+/*	background-color: blue;*/
+	width:80%;
+	height:100%;
+	display:inline-block;
+}
+
+.contact{
+/*	background-color: red;*/
+	width:15%;
+	height: 100%;
+	display: inline-block;
+}
+
+.title{
+/*	background-color: yellow;*/
+	width:85%;
+	display: table;
+	font-size: 130%;
+	margin: 30px 0 0 30px;
+}
+
+.content{
+/*	background-color: black;*/
+	width:85%;
+	display: table;
+	font-size: 90%;
+	margin: 10px 0px 20px 30px;
+}
+
+.content a{
+	text-decoration: none;
+	color:white;
+}
+
+#bottom{
+	height:10%;
+	width:100%;
+	display: table;
+	clear: both;
+}
+
+/*others*/
+.ulinfo{
+	text-align: left;
+	margin-left:5%;}
+
+.source{
+	font-size: 70%;}
