@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/universal.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<style>
+/*backgrounds*/
+#page1{
+	background: url('https://41.media.tumblr.com/40ce673d1a8003ba23acc419dde603d9/tumblr_nx18eh1ipd1snvybno1_540.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+#page2{
+	background-color: #ffe3cd;
+}
+
+#page3{
+	background-color:#fa6956;
+}
+
+#page4{
+	background-color:#468bcc;
+}
+
+
+/*sub divs*/
+/*one*/
+.definition{
+	/*background-color: red;
+	/*height:20%;*/
+	width: 30%;
+	margin: 15% 2%;
+	padding:10px;
+	display: inline-block;
+	vertical-align: top;
+	color: #437f6b;}
+
+/*two*/
+.rich{
+	/*title*/
+	margin: 5% 2% auto;
+	color:#ac7439;}
+
+.richmag{
+	/*number font*/
+	font-size: 200%;}
+
+.richdesc{
+	font-weight: bold;
+}
+
+
+#page2 .source{
+	color:#ac7439;
+}
+
+.box {
+	display:inline-block;
+	position: relative;
+/*	float:center;*/
+    width: 16%;
+    padding-bottom: 16%; /* = width for a 1:1 aspect ratio */
+    margin:0.5%;
+    background-color: #f0b43c;
+    overflow: hidden !important;
+ }
+
+.boxtext{
+	position: absolute;
+	vertical-align: center;
+	height: 90%;
+	width:90%;
+	padding: 5%;
+}
+
+.table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+
+.table-cell{
+	background-color: #d29c31;
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+    width:100%;
+    padding:3%;
+    font-size: 100%
+}
+
+/*three*/
+.effects{
+/*	background-color: blue;*/
+	width: 30%;
+	margin: 20% 2%;
+	display: inline-block;
+	vertical-align: middle;}
+
+.effectsimg{
+	background: url('https://41.media.tumblr.com/94a2db1ea361f8c2854e9e1b478f0bd7/tumblr_nx18eh1ipd1snvybno8_400.png');
+/*	background-color: red;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:70%;
+	width: 50%;
+	margin: 5% 2%;
+	display: inline-block;
+	vertical-align: middle;}
+
+/*four*/
+.intro-measures{
+/*	background-color:#c4bd36;*/
+	width: 80%;
+	height:20%;
+	margin:10% 0 2%;
+	padding:20px;
+	font-size: 120%;
+	vertical-align: middle;
+}
+
+.measures{
+/*	background-color: black;*/
+	/*height:20%;*/
+	width: 35%;
+	margin: 2%;
+	padding:10px;
+	display: inline-block;
+	/*vertical-align: middle;*/
+	vertical-align: top;
+}
+
+/*five*/
+h2{
+	margin:2% 5% 1% 5%;}
+
+.text{
+	margin: 0 4% 0 4%;}
+
+.image-details
+{
+	margin:5px;
+    position: relative;
+    text-decoration: none;
+}
+
+.image-details img
+{
+	width: 14%;
+    border-radius: 10px;
+}
+
+.image-details .rollover
+{
+    display: block;
+    width: 100%;
+    position: absolute;
+/*    text-align: left;*/
+    left: 0px;
+    bottom: 3px;
+    color: #FFF;
+    background-color: #000;
+    text-shadow: 0px 0px 2px #000;
+    opacity: .5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.image-details .rollover h4
+{
+    font-weight: 600;
+    padding: 0px 5px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.image-details .rollover p
+{
+    padding: 0px 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+
+</style>
+
+<script>
+$(document).ready(function() {
+    $('.rollover').css('display', 'none');
+    $('.image-details').hover(function() {
+        $(this).children('.rollover').slideDown(250);
+    }, function() {
+        $(this).children('.rollover').slideUp(250);
+    });
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="header">
+      <ul id="nav">
+        <li><a href="#">Hazard Map</a></li>
+        <li><a href="#">Basic Information</a></li>
+        <li><a href="//04_Buildings.html">Building Safety</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul id="subnav">
+        <li><a href="#page1">Definitions</a></li>
+        <li><a href="#page2">Richter Scale</a></li>
+        <li><a href="#page3">Other Effects</a></li>
+        <li><a href="#page4">Common Safety Measures</a></li>
+        <li><a href="#page5">Preventive Measures</a></li>
+      </ul>
+</div>
+
+
+<div class="wrapper tabled">
+	<div class="staged" id="page1">
+		<div class="definition">
+			<b>'Earthquake'</b> is a term used to describe both sudden slip on a fault, and the resulting ground shaking and radiated seismic energy caused by the slip, or by volcanic or magmatic activity, or other sudden stress changes in the earth. <font class="source">(US Geological Survey)</font>
+		</div>
+		<div class="definition">
+			A <b>fault</b> is a fracture along which the blocks of crust on either side have moved relative to one another parallel to the fracture. <font class="source">(US Geological Survey)</font>
+			</div>
+		</div>
+</div>
+
+<div class="wrapper tabled">
+	<div class="stage" id="page2">
+		<div class="middled">
+			<h2 class="rich">Richter Scale</h2>
+			<br>
+			<!--1st-->
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">< 2.0</font><br>
+							<font class="richdesc">"Micro"</font><br>
+							Micro earthquakes, not felt.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">2.0 - 2.9</font><br>
+							<font class="richdesc">"Minor"</font><br>
+							Generally not felt, but recorded.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">3.0 - 3.9</font><br>
+							<font class="richdesc">"Minor"</font><br>
+							Often felt, but rarely causes damage.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">4.0 - 4.9</font><br>
+							<font class="richdesc">"Light"</font><br>
+							Noticeable shaking of indoor items. Significant damage unlikely.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">5.0 - 5.9</font><br>
+							<font class="richdesc">"Moderate"</font><br>
+							Can cause major damage to poorly constructed buildings over small regions. At most slight damage to well-designed buildings.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<!--2nd-->
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">6.0 - 6.9</font><br>
+							<font class="richdesc">"Strong"</font><br>
+							Can be destructive in areas up to about 160 kilometres across populated areas.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">7.0 - 7.9</font><br>
+							<font class="richdesc">"Major"</font><br>
+							Can cause serious damage over larger areas.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">8.0 - 8.9</font><br>
+							<font class="richdesc">"Great"</font><br>
+							Can cause serious damage in areas several hundred miles across.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">9.0 - 9.9</font><br>
+							<font class="richdesc">"Micro"</font><br>
+							Devastating in areas several thousand miles across.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="box">
+				<div class="boxtext">
+					<div class="table">
+						<div class="table-cell">
+							<font class="richmag">10.0+</font><br>
+							<font class="richdesc">"Epic"</font><br>
+							Has never been recorded.
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<br>
+			<font class="source">Source: GNS Science.</font>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper tabled">
+	<div class="stage" id="page3">
+		<div class="effectsimg">
+		</div>
+		<div class="effects">
+			Earthquakes produce multiple secondary effects that have an impact on people and their surroundings. <br>These include: <br>
+				<ul class="ulinfo">
+					<li>damage to structures like buildings, roads, bridges and water pipes</li>
+					<li>the creation of a new fault due to ground ruptures</li>
+					<li>tsunamis</li>
+					<li>liquefaction (decrease in the strength and stiffness of the soil) and landslides</li>
+					<li>electrical fires and gas leakage <font class="source">(Orallo, 2011)</font></li>
+				</ul>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper tabled">
+	<div class="staged" id="page4">
+		<div class="middled">
+			<center><div class="intro-measures">The common safety measures that are taught are concerned with what to do during an earthquake and what to do after. But this does not mean that it is not possible to prepare for an earthquake before it even happens. Some of the steps both government and non-government organizations usually take are of a “curative nature” and are not enough by themselves. 
+			</br><font class="source">Orallo (2011)</font></center>
+		</div>
+			<div class="measures">
+				<h4>During an earthquake:</h4>
+				<ul class="ulinfo">
+					<li>duck under a sturdy desk or table or protect your head with your arms</li>
+					<li>stay away from glass windows, shelves, cabinets and other heavy objects</li>
+					<li>be aware of falling objects</li>
+					<li>stay away from trees and power lines</li>
+					<li>move away from steep slopes that may be affected by landslides</li>
+					<li>if you’re near the shore, move quickly to higher ground in case a tsunami follows</li>
+				</ul>
+			</div>
+
+			<div class="measures">
+				<h4>After an earthquake:</h4>
+				<ul class="ulinfo">	
+					<li>be prepared for after shocks</li>
+					<li>don’t use elevators or enter damaged buildings</li>
+					<li>check yourself and others for injuries</li>
+					<li>check water and electrical lines for damages</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper tabled">
+	<div class="stage" id="page5">
+			<h2>But what about BEFORE the earthquake actually strikes?</h2>
+			<h3 class="text">It is said that prevention is better than cure but due to the difficulty in predicting earthquakes, people rarely or sometimes don’t even bother to know  about precautionary earthquake measures.</h3>
+
+			<br>
+
+			<a href="#page5" class="image-details">
+    		<img src="https://40.media.tumblr.com/26c9bf71f8c654857d24ef30294e011e/tumblr_nx18eh1ipd1snvybno2_400.jpg" alt="" width="14%"/>
+				<span class="rollover">
+			        <h4></h4>
+    			    <p>Strap / bolt down heavy furniture to the walls.</p>
+    			</span>
+			</a>
+
+			<a href="#page5" class="image-details">
+    		<img src="https://41.media.tumblr.com/18ca55a17b63556c5c1ac8f299177d2d/tumblr_nx18eh1ipd1snvybno3_400.jpg" alt="" width="14%"/>
+				<span class="rollover">
+			        <h4></h4>
+    			    <p>Check the stability of hanging objects (e.g. Ceiling fans, chandeliers).</p>
+    			</span>
+			</a>
+
+			<a href="#page5" class="image-details">
+    		<img src="https://40.media.tumblr.com/3a91bf1b5a2b5cc1fc67f810c03298d6/tumblr_nx18eh1ipd1snvybno4_250.jpg" alt="" width="14%"/>
+				<span class="rollover">
+			        <h4></h4>
+    			    <p>Familiarize yourselves with exit routes, locations of fire extinguishers / fire alarms and first aid kits.</p>
+    			</span>
+			</a>
+
+			<a href="#" class="image-details">
+    		<img src="https://41.media.tumblr.com/60c72471dfa4a5af7293c12bf0165ada/tumblr_nx18eh1ipd1snvybno5_250.jpg" alt="" width="14%"/>
+				<span class="rollover">
+			        <h4></h4>
+    			    <p>Prepare an emergency supply kit with first aid, food, water, clothing, blankets, radios, flashlights and IDs.</p>
+    			</span>
+			</a>
+
+			<a href="#page5" class="image-details">
+    		<img src="https://41.media.tumblr.com/667883768cecbba212264f01b21cde07/tumblr_nx18eh1ipd1snvybno6_250.jpg" alt="" width="14%"/>
+				<span class="rollover">
+			        <h4></h4>
+    			    <p>Conduct and participate in regular earthquake drills.</p>
+    			</span>
+			</a>
+
+			<a href="#" class="image-details">
+    		<img src="https://41.media.tumblr.com/89ae771bfcfee80df5be196a4273628b/tumblr_nx18eh1ipd1snvybno7_400.jpg" alt="" width="14%"/>
+				<span class="rollover">
+			        <h4></h4>
+    			    <p>Make sure your home / building is earthquake ready.</p>
+    			</span>
+			</a>
+
+
+	</div>
+</div>
+
+<div class="wrappers tabled">
+	<div class="staged">
+		<div class="footer">
+			<div id="top">
+				<div class="desc">
+					<div class="title">
+						ABOUT
+					</div>
+
+					<div class="content">
+						'<b><i>Who’s At Fault?</i></b>’ aims to increase awareness on which areas and buildings in the metro are vulnerable to earthquakes. It covers basic information on earthquakes, fault-line locations within Metro Manila and safety tips in relation to buildings.
+					</div>
+				</div>
+
+				<div class="contact">
+					<div class="title">
+						CONTACT US
+					</div>
+
+					<div class="content">
+						<a href="#">Feedback Form</a><br>
+						<a href="#">Facebook</a><br>
+						<a href="#">Twitter</a>						
+					</div>
+				</div>
+			</div>
+
+			<div id="bottom">
+				<font class="source">Copyright 2015 | Who's At Fault?</font>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
